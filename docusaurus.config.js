@@ -102,9 +102,7 @@ const config = {
           {
             title: "Learn",
             items: [
-              { label: "Introduction", to: "/docs/" },
-              { label: "QuickStart", to: "/docs/quick-start" },
-              { label: "Changelog", to: "/changelog/" },
+              { label: "docs", to: "/docs/" },
             ],
           },
           {
