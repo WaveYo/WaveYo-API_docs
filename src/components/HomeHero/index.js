@@ -22,7 +22,7 @@ function HomeHero() {
         <div className={styles.buttons}>
           <a
             className={styles.ctaButton}
-            href="/docs/intro"
+            href="/docs/start/overview"
           >
             快速开始
           </a>
