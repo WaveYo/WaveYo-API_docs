@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 100vh;
   padding: 2rem 1rem;
   background: linear-gradient(
     135deg,
@@ -62,8 +62,14 @@
   font-size: 3.5rem;
   font-weight: 700;
   margin: 0 0 1rem 0;
-  color: var(--ifm-color-primary);
+  /* color: var(--ifm-color-primary); */
+  color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .title {
+  color: var(--ifm-color-primary-light);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .tagline {
