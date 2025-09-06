@@ -1,0 +1,77 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+/* Code block styling for HomeFeatures */
+.home-codeblock {
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  min-width: 400px;
+}
+
+.home-codeblock pre {
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--ifm-code-background) !important;
+  overflow-x: auto;
+}
+
+.home-codeblock code {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Ensure consistent code block sizing in double column layout */
+.grid.grid-cols-1\\.lg\\:grid-cols-2 .home-codeblock {
+  max-width: 450px;
+  min-width: 380px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-codeblock {
+    max-width: 100%;
+    min-width: unset;
+    width: 100%;
+  }
+  
+  .grid.grid-cols-1\\.lg\\:grid-cols-2 .home-codeblock {
+    max-width: 100%;
+    min-width: unset;
+  }
+}
+
+/* Ensure proper alignment in feature components */
+.flex.flex-col.items-center .home-codeblock {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Double column layout adjustments for better alignment */
+.grid-cols-1-lg-grid-cols-2 {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  padding: 2rem 1rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .grid-cols-1-lg-grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
