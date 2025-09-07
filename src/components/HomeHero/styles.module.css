@@ -4,22 +4,8 @@
   justify-content: center;
   min-height: 100vh;
   padding: 2rem 1rem;
-  background: linear-gradient(
-    135deg,
-    var(--ifm-color-primary-lighter) 0%,
-    var(--ifm-color-primary-lightest) 50%,
-    var(--ifm-color-primary-lighter) 100%
-  );
+  background: var(--ifm-background-color);
   transition: background 0.3s ease;
-}
-
-[data-theme='dark'] .heroContainer {
-  background: linear-gradient(
-    135deg,
-    var(--ifm-color-primary-darker) 0%,
-    var(--ifm-color-primary-darkest) 50%,
-    var(--ifm-color-primary-darker) 100%
-  );
 }
 
 .heroContent {
@@ -62,21 +48,15 @@
   font-size: 3.5rem;
   font-weight: 700;
   margin: 0 0 1rem 0;
-  /* color: var(--ifm-color-primary); */
-  color: black;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-[data-theme='dark'] .title {
-  color: var(--ifm-color-primary-light);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: var(--ifm-color-primary);
+  text-shadow: none;
 }
 
 .tagline {
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0 0 2.5rem 0;
-  color: var(--ifm-font-color-base);
+  color: var(--ifm-color-emphasis-700);
   opacity: 0.9;
 }
 
@@ -95,7 +75,7 @@
   color: white;
   background: var(--ifm-color-primary);
   border: 2px solid var(--ifm-color-primary);
-  border-radius: 8px;
+  border-radius: var(--ifm-button-border-radius);
   transition: all 0.3s ease;
 }
 
@@ -103,9 +83,29 @@
   background: var(--ifm-color-primary-dark);
   border-color: var(--ifm-color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--ifm-global-shadow-md);
   text-decoration: none;
   color: white;
+}
+
+@media (max-width: 996px) {
+  .heroContainer {
+    min-height: 70vh;
+    padding: 2rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+  }
+  
+  .tagline {
+    font-size: 1.3rem;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -115,8 +115,8 @@
   }
   
   .logo {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-width: 3px;
   }
   
@@ -126,6 +126,35 @@
   
   .tagline {
     font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ctaButton {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContainer {
+    min-height: 50vh;
+    padding: 1rem 0.75rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .tagline {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1.5rem;
   }
   
   .ctaButton {
@@ -134,17 +163,135 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   
   .tagline {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   
   .logo {
     width: 80px;
     height: 80px;
+  }
+  
+  .ctaButton {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Command display styles */
+.commandContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.commandDisplay {
+  display: flex;
+  align-items: center;
+  background: var(--ifm-code-background);
+  border-radius: var(--ifm-code-border-radius);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: var(--ifm-global-shadow-sm);
+  max-width: 500px;
+  width: 100%;
+}
+
+.commandText {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+  color: var(--ifm-code-color);
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.copyButton {
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--ifm-button-border-radius);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.copyButton:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.copyButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive adjustments for command display */
+@media (max-width: 768px) {
+  .commandContainer {
+    margin-top: 1.5rem;
+  }
+  
+  .commandDisplay {
+    padding: 0.625rem 0.875rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .commandText {
+    font-size: 0.8125rem;
+    white-space: normal;
+    text-overflow: clip;
+    text-align: center;
+  }
+  
+  .copyButton {
+    margin-left: 0;
+    width: 100%;
+    padding: 0.625rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .commandContainer {
+    margin-top: 1.25rem;
+  }
+  
+  .commandDisplay {
+    padding: 0.5rem 0.75rem;
+    max-width: 100%;
+  }
+  
+  .commandText {
+    font-size: 0.75rem;
+  }
+  
+  .copyButton {
+    font-size: 0.8125rem;
+    padding: 0.5rem 0.875rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .commandText {
+    font-size: 0.6875rem;
+  }
+  
+  .copyButton {
+    font-size: 0.75rem;
+    padding: 0.4375rem 0.75rem;
   }
 }

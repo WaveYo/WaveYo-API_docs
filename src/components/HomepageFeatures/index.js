@@ -10,23 +10,23 @@ export function HomeFeature({
   children,
 }) {
   return (
-    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '1rem'}}>
-      <p style={{fontSize: '0.875rem', color: 'var(--ifm-color-emphasis-700)', fontWeight: '500', letterSpacing: '0.05em', textTransform: 'uppercase'}}>
+    <div className={styles.featureContainer}>
+      <p className={styles.featureTagline}>
         {tagline}
       </p>
-      <h1 style={{marginTop: '0.75rem', fontFamily: 'monospace', fontWeight: '300', fontSize: '2.25rem', letterSpacing: '-0.025em', color: 'var(--ifm-color-primary)'}}>
+      <h1 className={styles.featureTitle}>
         {title}
       </h1>
-      <p style={{marginTop: '2.5rem', marginBottom: '1.5rem'}}>{description}</p>
+      <p className={styles.featureDescription}>{description}</p>
       {children}
-      <p style={{fontSize: '0.875rem', fontStyle: 'italic', color: 'var(--ifm-color-emphasis-700)'}}>{annotaion}</p>
+      <p className={styles.featureAnnotation}>{annotaion}</p>
     </div>
   );
 }
 
 function HomeFeatureSingleColumn(props) {
   return (
-    <div style={{display: 'grid', gridTemplateColumns: '1fr', padding: '2rem 1rem', maxWidth: '80rem', margin: '0 auto'}}>
+    <div className={styles.singleColumnLayout}>
       <HomeFeature {...props} />
     </div>
   );
@@ -39,7 +39,7 @@ function HomeFeatureDoubleColumn({
   const [children1, children2] = children ?? [];
 
   return (
-    <div className={styles['grid-cols-1-lg-grid-cols-2']}>
+    <div className={styles.doubleColumnLayout}>
       <div>
         <HomeFeature {...feature1}>{children1}</HomeFeature>
       </div>

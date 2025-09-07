@@ -11,8 +11,8 @@ sidebar_position: 2
 在开始之前，请确保您的系统满足以下要求：
 
 - **Python 3.11+**: WaveYo-API 建议使用 Python 3.11 或更高版本
-- **uv**: 现代、快速的 Python 包管理器（必需）
-- **Git**: 用于版本控制和插件下载
+- **uv**: 现代、快速的 Python 包管理器（必需） | [官方文档→](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_1)
+- **Git**: 用于版本控制和插件下载 | [官方文档→](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git)
 
 :::
 
