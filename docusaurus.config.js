@@ -92,7 +92,12 @@ const config = {
             type: 'doc',
             docId: 'start/overview',
             position: 'left',
-            label: 'docs',
+            label: '文档',
+          },
+          {
+            to: '/store',
+            position: 'left',
+            label: '商店',
           },
         ],
       },
@@ -102,7 +107,7 @@ const config = {
           {
             title: "Learn",
             items: [
-              { label: "docs", to: "/docs/start/overview" },
+              { label: "文档", to: "/docs/start/overview" },
             ],
           },
           {
