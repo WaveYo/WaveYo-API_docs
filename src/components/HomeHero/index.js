@@ -38,7 +38,7 @@ function HomeHero() {
         </div>
         <div className={styles.commandContainer}>
           <div className={styles.commandDisplay}>
-            <code className={styles.commandText}>pipx install yoapi && yoapi init</code>
+            <code className={styles.commandText}>pipx install yoapi-cli && yoapi init</code>
             <button 
               className={styles.copyButton}
               onClick={copyCommand}
