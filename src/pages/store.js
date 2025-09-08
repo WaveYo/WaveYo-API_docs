@@ -21,7 +21,7 @@ const StorePage = () => {
 
   // 复制安装命令到剪贴板
   const copyInstallCommand = (fullName, index) => {
-    const command = `yoapi install ${fullName}`;
+    const command = `yoapi plugin download ${fullName}`;
     navigator.clipboard.writeText(command).then(() => {
       // 设置当前复制的按钮ID
       setCopiedButtonId(index);
