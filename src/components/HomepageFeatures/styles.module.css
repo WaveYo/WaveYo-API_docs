@@ -61,7 +61,7 @@
 /* Code block styling - match Docusaurus docs style exactly */
 .home-codeblock {
   margin: 1rem 0;
-  border-radius: var(--ifm-code-border-radius);
+  border-radius: 20px;
   border: 1px solid var(--ifm-color-emphasis-200);
   box-shadow: var(--ifm-global-shadow-lw);
   display: block;
@@ -73,7 +73,7 @@
 .home-codeblock pre {
   margin: 0;
   padding: 0;
-  background-color: var(--ifm-code-background) !important;
+  /* background-color: var(--ifm-code-background) !important; */
   overflow-x: auto;
   border-radius: calc(var(--ifm-code-border-radius) - 1px);
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */

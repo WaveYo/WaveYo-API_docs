@@ -8,7 +8,7 @@ function HomeHero() {
 
   const copyCommand = async () => {
     try {
-      await navigator.clipboard.writeText('pipx install yoapi && yoapi init');
+      await navigator.clipboard.writeText('pipx install yoapi-cli && yoapi init');
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
