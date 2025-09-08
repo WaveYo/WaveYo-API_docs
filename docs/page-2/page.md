@@ -95,14 +95,3 @@ def register(app, **dependencies):
     config = dependencies.get('config')
 ```
 
-<!-- ## 下一步
-
-- [插件类型详解](./plugin-types)
-- [开发规范](./development-specifications)  
-- [核心功能](./core-features)
-- [最佳实践](./best-practices)
-- [示例模板](./examples)
-- [CLI工具](./cli-tools)
-- [故障排除](./troubleshooting) -->
-
-

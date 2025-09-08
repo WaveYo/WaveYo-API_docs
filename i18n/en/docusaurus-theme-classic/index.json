@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "WaveYo-API",
+    "description": "The title of the homepage"
+  },
+  "description": {
+    "message": "Core-Plugin architecture high-performance API framework",
+    "description": "The description of the homepage for meta tags"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "WaveYo-API",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "WaveYo Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "Documentation",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Store": {
+    "message": "Store",
+    "description": "Navbar item with label Store"
+  }
+}

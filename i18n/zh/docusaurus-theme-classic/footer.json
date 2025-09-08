@@ -1,0 +1,50 @@
+{
+  "link.title.WaveYo-API": {
+    "message": "WaveYo-API",
+    "description": "The title of the footer links column with title=WaveYo-API in the footer"
+  },
+  "link.title.文档": {
+    "message": "文档",
+    "description": "The title of the footer links column with title=文档 in the footer"
+  },
+  "link.title.WaveYo Team": {
+    "message": "WaveYo Team",
+    "description": "The title of the footer links column with title=WaveYo Team in the footer"
+  },
+  "link.title.相关项目": {
+    "message": "相关项目",
+    "description": "The title of the footer links column with title=相关项目 in the footer"
+  },
+  "link.item.label.介绍": {
+    "message": "介绍",
+    "description": "The label of footer link with label=介绍 linking to /docs/start/overview"
+  },
+  "link.item.label.快速开始": {
+    "message": "快速开始",
+    "description": "The label of footer link with label=快速开始 linking to /docs/start/get_started_quickly"
+  },
+  "link.item.label.主页": {
+    "message": "主页",
+    "description": "The label of footer link with label=主页 linking to https://github.com/WaveYo"
+  },
+  "link.item.label.WaveYo-API": {
+    "message": "WaveYo-API",
+    "description": "The label of footer link with label=WaveYo-API linking to https://github.com/WaveYo/WaveYo-API"
+  },
+  "link.item.label.YoAPI CLI": {
+    "message": "YoAPI CLI",
+    "description": "The label of footer link with label=YoAPI CLI linking to https://github.com/WaveYo/yoapi-cli"
+  },
+  "link.item.label.MySQL插件": {
+    "message": "MySQL插件",
+    "description": "The label of footer link with label=MySQL插件 linking to https://github.com/WaveYo/yoapi_plugin_mysqldb"
+  },
+  "link.item.label.OpenAPI基础插件": {
+    "message": "OpenAPI基础插件",
+    "description": "The label of footer link with label=OpenAPI基础插件 linking to https://github.com/WavesMan/yoapi_plugin_openapi_base"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 WaveYo. All rights reserved.",
+    "description": "The footer copyright"
+  }
+}

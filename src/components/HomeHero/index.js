@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Translate from '@docusaurus/Translate';
 import styles from './styles.module.css';
 
 function HomeHero() {
@@ -33,7 +34,9 @@ function HomeHero() {
             className={styles.ctaButton}
             href="/docs/start/overview"
           >
-            快速开始
+            <Translate id="home.hero.ctaButton">
+              快速开始
+            </Translate>
           </a>
         </div>
         <div className={styles.commandContainer}>
@@ -42,9 +45,21 @@ function HomeHero() {
             <button 
               className={styles.copyButton}
               onClick={copyCommand}
-              aria-label="复制命令"
+              aria-label={
+                <Translate id="home.hero.copyAriaLabel">
+                  复制命令
+                </Translate>
+              }
             >
-              {copied ? '已复制!' : '复制'}
+              {copied ? (
+                <Translate id="home.hero.copiedButton">
+                  已复制!
+                </Translate>
+              ) : (
+                <Translate id="home.hero.copyButton">
+                  复制
+                </Translate>
+              )}
             </button>
           </div>
         </div>

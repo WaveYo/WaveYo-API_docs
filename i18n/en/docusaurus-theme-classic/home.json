@@ -1,0 +1,74 @@
+{
+  "home.hero.ctaButton": {
+    "message": "Get Started",
+    "description": "The text for the call-to-action button in the hero section"
+  },
+  "home.hero.copyButton": {
+    "message": "Copy",
+    "description": "The text for the copy button in the hero section"
+  },
+  "home.hero.copiedButton": {
+    "message": "Copied!",
+    "description": "The text for the copy button when command has been copied"
+  },
+  "home.hero.copyAriaLabel": {
+    "message": "Copy command",
+    "description": "The aria-label for the copy button"
+  },
+  "home.features.cli.title": {
+    "message": "CLI Tool Usage",
+    "description": "The title for CLI tool usage section"
+  },
+  "home.features.cli.description": {
+    "message": "WaveYo-API provides powerful command-line tools to simplify plugin development and management processes",
+    "description": "The description for CLI tool usage section"
+  },
+  "home.features.metadata.title": {
+    "message": "Plugin Metadata Management",
+    "description": "The title for plugin metadata management section"
+  },
+  "home.features.metadata.description": {
+    "message": "Unified plugin metadata management system supporting priority loading, dependency management, and backward compatibility",
+    "description": "The description for plugin metadata management section"
+  },
+  "home.features.dependency.title": {
+    "message": "Smart Dependency Resolution",
+    "description": "The title for smart dependency resolution section"
+  },
+  "home.features.dependency.description": {
+    "message": "Automatic topological sorting algorithm supporting dependency relationship resolution and circular dependency detection",
+    "description": "The description for smart dependency resolution section"
+  },
+  "home.features.logging.title": {
+    "message": "Logging System",
+    "description": "The title for logging system section"
+  },
+  "home.features.logging.description": {
+    "message": "Unified log format and level management, supporting modular logging and context information",
+    "description": "The description for logging system section"
+  },
+  "home.features.pluginTypes.title": {
+    "message": "Plugin Type System",
+    "description": "The title for plugin type system section"
+  },
+  "home.features.pluginTypes.description": {
+    "message": "Support for multiple plugin types: API endpoints, database services, authentication authorization, utility plugins",
+    "description": "The description for plugin type system section"
+  },
+  "home.features.environment.title": {
+    "message": "Environment Variable Validation",
+    "description": "The title for environment variable validation section"
+  },
+  "home.features.environment.description": {
+    "message": "Powerful environment variable validation framework supporting type checking, default values, and requirement validation",
+    "description": "The description for environment variable validation section"
+  },
+  "home.features.errorHandling.title": {
+    "message": "Error Handling",
+    "description": "The title for error handling section"
+  },
+  "home.features.errorHandling.description": {
+    "message": "Comprehensive error handling mechanism supporting exception catching, logging, and friendly error responses",
+    "description": "The description for error handling section"
+  }
+}

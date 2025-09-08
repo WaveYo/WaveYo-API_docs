@@ -1,5 +1,6 @@
 import React from "react";
 import CodeBlock from "@theme/CodeBlock";
+import Translate from "@docusaurus/Translate";
 import styles from './styles.module.css';
 
 export function HomeFeature({
@@ -55,9 +56,9 @@ function HomeFeatures() {
     <>
       {/* CLI 工具使用 - 单独显示在最上方 */}
       <HomeFeatureSingleColumn
-        title="CLI 工具使用"
+        title={<Translate id="home.features.cli.title">CLI 工具使用</Translate>}
         tagline="command line interface"
-        description="WaveYo-API 提供了强大的命令行工具来简化插件开发和管理流程"
+        description={<Translate id="home.features.cli.description">WaveYo-API 提供了强大的命令行工具来简化插件开发和管理流程</Translate>}
       >
         <CodeBlock
           title="CLI 命令示例"
@@ -84,14 +85,14 @@ function HomeFeatures() {
       <HomeFeatureDoubleColumn
         features={[
           {
-            title: "插件元数据管理",
+            title: <Translate id="home.features.metadata.title">插件元数据管理</Translate>,
             tagline: "plugin metadata management",
-            description: "统一的插件元数据管理系统，支持优先级加载、依赖管理和向后兼容",
+            description: <Translate id="home.features.metadata.description">统一的插件元数据管理系统，支持优先级加载、依赖管理和向后兼容</Translate>,
           },
           {
-            title: "智能依赖解析",
+            title: <Translate id="home.features.dependency.title">智能依赖解析</Translate>,
             tagline: "smart dependency resolution",
-            description: "自动拓扑排序算法，支持依赖关系解析和循环依赖检测",
+            description: <Translate id="home.features.dependency.description">自动拓扑排序算法，支持依赖关系解析和循环依赖检测</Translate>,
           },
         ]}
       >
@@ -135,14 +136,14 @@ function HomeFeatures() {
           //   description: "强大的环境变量验证框架，支持类型检查、默认值和必需性验证",
           // },
           {
-            title: "日志系统",
+            title: <Translate id="home.features.logging.title">日志系统</Translate>,
             tagline: "logging system",
-            description: "统一的日志格式和级别管理，支持模块化日志记录和上下文信息",
+            description: <Translate id="home.features.logging.description">统一的日志格式和级别管理，支持模块化日志记录和上下文信息</Translate>,
           },
           {
-            title: "插件类型系统",
+            title: <Translate id="home.features.pluginTypes.title">插件类型系统</Translate>,
             tagline: "plugin type system",
-            description: "支持多种插件类型：API端点、数据库服务、认证授权、工具类插件",
+            description: <Translate id="home.features.pluginTypes.description">支持多种插件类型：API端点、数据库服务、认证授权、工具类插件</Translate>,
           },
         ]}
       >
@@ -204,9 +205,9 @@ function HomeFeatures() {
       <HomeFeatureDoubleColumn
         features={[
           {
-            title: "环境变量验证",
+            title: <Translate id="home.features.environment.title">环境变量验证</Translate>,
             tagline: "environment validation",
-            description: "强大的环境变量验证框架，支持类型检查、默认值和必需性验证",
+            description: <Translate id="home.features.environment.description">强大的环境变量验证框架，支持类型检查、默认值和必需性验证</Translate>,
           },
           // {
           //   title: "日志系统",
@@ -214,9 +215,9 @@ function HomeFeatures() {
           //   description: "统一的日志格式和级别管理，支持模块化日志记录和上下文信息",
           // },
           {
-            title: "错误处理",
+            title: <Translate id="home.features.errorHandling.title">错误处理</Translate>,
             tagline: "error handling",
-            description: "完善的错误处理机制，支持异常捕获、日志记录和友好的错误响应",
+            description: <Translate id="home.features.errorHandling.description">完善的错误处理机制，支持异常捕获、日志记录和友好的错误响应</Translate>,
           },
         ]}
       >

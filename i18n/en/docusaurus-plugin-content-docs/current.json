@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.开始": {
+    "message": "Getting Started",
+    "description": "The label for category 开始 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.插件开发": {
+    "message": "Plugin Development",
+    "description": "The label for category 插件开发 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.开发者": {
+    "message": "Developers",
+    "description": "The label for category 开发者 in sidebar tutorialSidebar"
+  }
+}

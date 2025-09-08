@@ -1,0 +1,42 @@
+{
+  "link.title.Documentation": {
+    "message": "Documentation",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.WaveYo Team": {
+    "message": "WaveYo Team",
+    "description": "The title of the footer links column with title=WaveYo Team in the footer"
+  },
+  "link.title.Related Projects": {
+    "message": "Related Projects",
+    "description": "The title of the footer links column with title=Related Projects in the footer"
+  },
+  "link.item.label.Introduction": {
+    "message": "Introduction",
+    "description": "The label of footer link with label=Introduction linking to /docs/start/overview"
+  },
+  "link.item.label.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label of footer link with label=Quick Start linking to /docs/start/get_started_quickly"
+  },
+  "link.item.label.Homepage": {
+    "message": "Homepage",
+    "description": "The label of footer link with label=Homepage linking to https://github.com/WaveYo"
+  },
+  "link.item.label.WaveYo-API": {
+    "message": "WaveYo-API",
+    "description": "The label of footer link with label=WaveYo-API linking to https://github.com/WaveYo/WaveYo-API"
+  },
+  "link.item.label.YoAPI CLI": {
+    "message": "YoAPI CLI",
+    "description": "The label of footer link with label=YoAPI CLI linking to https://github.com/WaveYo/yoapi-cli"
+  },
+  "link.item.label.MySQL Plugin": {
+    "message": "MySQL Plugin",
+    "description": "The label of footer link with label=MySQL Plugin linking to https://github.com/WaveYo/yoapi_plugin_mysqldb"
+  },
+  "link.item.label.OpenAPI Base Plugin": {
+    "message": "OpenAPI Base Plugin",
+    "description": "The label of footer link with label=OpenAPI Base Plugin linking to https://github.com/WavesMan/yoapi_plugin_openapi_base"
+  }
+}
