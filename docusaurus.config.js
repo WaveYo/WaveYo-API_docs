@@ -79,6 +79,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // 主题颜色模式配置
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -105,16 +111,33 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: "Learn",
+            title: "WaveYo-API",
             items: [
-              { label: "文档", to: "/docs/start/overview" },
+              {
+                html: `
+                  <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                    <img alt="WaveYo Logo" src="/img/logo.svg" width="32" height="32" style="margin-right: 12px; border-radius: 50%;" />
+                    <span style="font-weight: bold;">WaveYo-API</span>
+                  </div>
+                  <div style="font-size: 14px; color: #ffffffff; margin-bottom: 12px;">
+                    核心-插件 架构的高性能API框架
+                  </div>
+                `,
+              },
+            ],
+          },
+          {
+            title: "文档",
+            items: [
+              { label: "介绍", to: "/docs/start/overview" },
+              { label: "快速开始", to: "/docs/start/get_started_quickly" },
             ],
           },
           {
             title: "WaveYo Team",
             items: [
               {
-                label: "Homepage",
+                label: "主页",
                 href: "https://github.com/WaveYo",
               },
               {
@@ -128,24 +151,20 @@ const config = {
             ],
           },
           {
-            title: "Related",
+            title: "相关项目",
             items: [
               { 
-                label: "yoapi_plugin_mysqldb", 
+                label: "MySQL插件", 
                 href: "https://github.com/WaveYo/yoapi_plugin_mysqldb" 
               },
               { 
-                label: "yoapi_plugin_mcserver_status", 
-                href: "https://github.com/WavesMan/yoapi_plugin_mcserver_status" 
-              },
-              { 
-                label: "yoapi_plugin_openapi_base", 
+                label: "OpenAPI基础插件", 
                 href: "https://github.com/WavesMan/yoapi_plugin_openapi_base" 
               },
             ],
           },
         ],          
-        copyright: `Copyright © ${new Date().getFullYear()} WaveYo  Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} WaveYo. All rights reserved.`,
       },
       prism: {
         theme: themes.github,

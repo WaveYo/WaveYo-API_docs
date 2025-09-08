@@ -61,3 +61,227 @@
     padding: 3px;
   }
 }
+
+/* NoneBot2风格Footer样式 */
+.footer {
+  background: #8c8f92;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem 0 1rem;
+  color: #e6e6e6;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.footer__link-item {
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.footer__link {
+  color: #b8b8b8;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.footer__link-icon {
+  width: 12px;
+  height: 12px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.footer__link:hover .footer__link-icon {
+  opacity: 1;
+}
+
+/* 社交媒体链接样式 */
+.footer__social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__social-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+.footer__social-link-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* 版权信息区域 */
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.footer__copyright {
+  color: #dfdfdfe0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer__support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.footer__support-text {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer__support-link {
+  display: inline-flex;
+  align-items: center;
+  color: #b8b8b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__support-link:hover {
+  color: #ffffff;
+}
+
+.footer__support-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer__support-link:hover .footer__support-icon {
+  opacity: 1;
+}
+
+/* Logo和标语区域 */
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer__logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px;
+  transition: all 0.3s ease;
+}
+
+.footer__logo:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.footer__tagline {
+  color: #b8b8b8;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .footer__links {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .footer__social-links {
+    justify-content: center;
+  }
+  
+  .footer__support {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .footer__brand {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 0 1rem;
+  }
+  
+  .footer__social-link {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .footer__social-link-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* 深色主题适配 */
+[data-theme='dark'] .footer {
+  background: #191e24;
+}
+
+[data-theme='dark'] .footer__link {
+  color: #a0a0a0;
+}
+
+[data-theme='dark'] .footer__link:hover {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .footer__social-link {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme='dark'] .footer__social-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
